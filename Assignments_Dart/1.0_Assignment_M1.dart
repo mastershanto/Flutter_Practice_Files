@@ -17,7 +17,7 @@ void main(){
   print("Multiplication: ${a} * ${b} = ${multiplication}");
 
   /// Division and printing
-  double division=a/b;
+  var division=a/b;
   print("Division: ${a} / ${b} = ${division}");
 
   /// Modulus and printing
@@ -33,7 +33,7 @@ void main(){
   int addition=a+b;
   int subtraction=a-b;
   int multiplication=a*b;
-  double division=a/b;
+  var division=a/b;
   int modulus=a%b;
 
   print("a = ${a}, b = ${b}");
