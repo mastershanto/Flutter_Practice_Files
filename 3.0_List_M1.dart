@@ -68,6 +68,9 @@ void main() {
   myList.removeRange(0,6);
   print("myList.removeRange() => ${myList}");
 
+  ///Clear the List
+  myList.clear();
+  print("myList.clear() => ${myList}");
 
 
 

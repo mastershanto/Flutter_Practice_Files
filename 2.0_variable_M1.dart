@@ -47,5 +47,13 @@ void main(){
 
 
 
+/*
+  ///|`int`      | 4 bytes (32 bits) or 8 bytes (64 bits) |
+  ///| `double`   | 8 bytes (64 bits) |
+  ///| `bool`     | 1 byte (8 bits)  |
+  ///| `String`   | Each character typically takes 2 bytes (UTF-16 encoding) |
+  ///| `List`     | Depends on the number of elements and the size of each element |
+  ///| `Map`      | Depends on the number of key-value pairs and the size of each key and value |
+*/
 
 }
