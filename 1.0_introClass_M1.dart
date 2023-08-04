@@ -1,3 +1,22 @@
+void   main(){
+  String firstName="Sheikh";
+  String midName=" Ajijul Hoque";
+  String lastName="Shanto";
+
+  print(firstName+" "+midName+" "+lastName);
+    print(54838534);
+    print(53);
+    print(5*5);
+    print(5/5);
+    print(5+5);
+    print(5-5);
+
+
+
+
+}
+
+
 /*
 //......................................................................................
 
@@ -38,17 +57,5 @@ print(res1);
 //..............................................................
 */
 
-void main(){
-
-  print("Hellow World");
-  print("Dart from Ostad");
-  print(54838534);
-  print(53);
-  print(5*5);
-  print(5/5);
-  print(5+5);
-  print(5-5);
-  
-}
 
 
