@@ -1,5 +1,5 @@
 void main() {
-  /// Set is "List of Unic value" which is declared by {} calibrates;
+  /// Set is "List of Unique value" which is declared by {} calibrates;
   Set<dynamic> mySet = {1.5, 2, 3, 5, "Shanto", 6, "masterShanto"};
   print(mySet);
 
@@ -25,7 +25,7 @@ void main() {
   mySet.remove("Shanto");
   print(mySet);
 
-  ///remove data by index from Set:
+  ///remove data by index from Set function:
   mySet.removeAll({"Shanto", 2, "CCDL", .5});
   print(mySet);
 
