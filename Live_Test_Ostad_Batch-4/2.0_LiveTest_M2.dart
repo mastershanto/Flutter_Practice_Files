@@ -1,17 +1,18 @@
-import 'dart:io';
-///Ajijul Hoque, module -2 live test, Flutter Batch-4, Ostad.app
+///Ajijul Hoque, module-2 liveTest, Flutter Batch-4, Ostad.app
+
 void main() {
+  ///Given a list of item prices
+  List<double> listOfItemPrices = [12.99, 8.75, 21.50, 5.00];
 
-  ///Creating Map for representing a person
-  Map<String, dynamic> thePerson = {
-    "PersonID": 14714,
-    "Name": "Sheikh Ajijul Hoque (Shanto)",
-    "Age": 27,
-    "Salary": 35000.00,
-    "Gender": "Male"
-  };
+  /// total cost without tex
+  double costWithoutTex = 0;
+  for (double price in listOfItemPrices) {
+    costWithoutTex = costWithoutTex + price;
+  }
 
-  ///Printing out the Salary Amount
-  print("#Salary of thePerson: ${thePerson["Salary"].toStringAsFixed(2)} Tk Only.");
+  ///Total cost including tex rate of 8% on total price amount
+  double totalCostWithTex = costWithoutTex * (1 + 1 * 8 / 100);
 
+  ///Printing the total cost:
+  print("Total Cost: \$${totalCostWithTex.toStringAsFixed(2)}");
 }
