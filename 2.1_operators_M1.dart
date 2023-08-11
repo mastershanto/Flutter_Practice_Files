@@ -12,8 +12,8 @@ void main() {
   String sID = "59333";
 
   ///arithmetic Operators: +,-,*,/,~/,%,++,--;
-  int sumision = a + b;
-  print("Sumision (A+B)= ${sumision} ");
+  int summation = a + b;
+  print("Summation (A+B)= ${summation} ");
 
   int subtraction = a - b;
   print("Subtraction (A-B)= ${subtraction} ");
@@ -29,8 +29,8 @@ void main() {
   var intDivision = a ~/ b;
   print("Integer result division (A~/B)= ${division} ");
 
-  int modulas = a % b;
-  print("Modulas (A%B)= ${modulas}");
+  int modulus = a % b;
+  print("Modulus (A%B)= ${modulus}");
   print(".....................");
 
   ///Type Test Operators: is, is!;
