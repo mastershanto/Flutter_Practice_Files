@@ -1,5 +1,11 @@
 import 'dart:io';
 void main() {
+  /*print("Starting");
+  int age=30;
+  assert(age==35);///if this assert be false, this program can't print bellow's code result.
+  print("Finished");*/
+
+
   print("Enter the experience  of codding: ");
   int exp = int.parse(stdin.readLineSync()!);
 

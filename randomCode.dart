@@ -9,4 +9,9 @@ print(map["name"]);*/
 
   List<dynamic> MY=["Shanto",5,2.25,[35,"Shanto", 2.5,3]];
   print(MY);
+
+  var x=5;
+  for(var i=0; i<x;i++){
+    print(i);
+  }
 }

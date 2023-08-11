@@ -5,7 +5,7 @@ void main() {
   ///Test Operators: is, is!;
   ///Assignment Operators: =, ??=;
   ///Logical Operators: &&, ||, !;
-  ///
+  ///Ternary Operators: Variable condition ? true:false;
 
   int a = 30, b = 10;
   double m = 3.58, pi = 3.14159;
@@ -87,5 +87,10 @@ print(".........................");
   print("...................................");
 
   ///Cos-code Notation Operators
-  ///
+
+
+  ///Ternary Operators(Shortcuts of "if...else") : Variable condition ? true:false;
+  int number=5;
+  number <4? print("True"):print("Flase");
+  number <4? print(5+5):print(4+4);
 }
