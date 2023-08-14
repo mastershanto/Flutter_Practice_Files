@@ -1,17 +1,19 @@
-void  main(){
-  var myList=[1,2,3];
-  myList.remove(2);
-  myList.add(5);
-  print(myList);
+class MyClass{
+  ///Declaring attributes
+  var myName="Ajijul Hoque Shanto";
+  var alphabet=["A","B","C","D"];
 
-/*var map={"name":"jhon","shanto":30}
-print(map["name"]);*/
-
-  List<dynamic> MY=["Shanto",5,2.25,[35,"Shanto", 2.5,3]];
-  print(MY);
-
-  var x=5;
-  for(var i=0; i<x;i++){
-    print(i);
+///Declaring methods
+  addTwoNumber(int x,int y){
+    print(x+y);
   }
+  addThreeNumber(int x,int y, int z){
+    print(x+y+z);
+  }
+}
+void  main(){
+MyClass mc=new MyClass();///Declaring an objects
+mc.addThreeNumber(50, 23, 27);///accessing the methods
+print(mc.alphabet);///accessing the attributes
+
 }
