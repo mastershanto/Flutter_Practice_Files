@@ -25,7 +25,7 @@ bool containsVowel(String? input) {
     }
   }
 
-  return false;  // No vowel found in the entire string
+  return false;
 }
 
 
