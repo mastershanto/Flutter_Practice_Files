@@ -1,58 +1,90 @@
-class Car {
-  static int numberOfCars = 0;
+///Ajijul Hoque, Assignment of Module-3, Flutter Batch-4, Ostad.app:
 
+class Car {
+  /// Properties:
   String brand;
   String model;
   int year;
   double milesDriven;
 
-  Car(this.brand, this.model, this.year, this.milesDriven) {
-    numberOfCars++;
+  /// Static Properties
+  static int numbersOfCars = 0;
+
+  /// Constructor of Car class:
+  Car(
+      {required this.brand,
+        required this.model,
+        required this.year,
+        required this.milesDriven}) {
+    numbersOfCars++;
   }
 
-  void drive(double miles) {
-    milesDriven += miles;
+  /// Methods of this class are:
+  /// adding drive miles to dri
+  void drive(double? miles) {
+    milesDriven = milesDriven + miles!;
   }
 
+  /// returning current driven miles by this method
   double getMilesDriven() {
     return milesDriven;
   }
 
+  /// returning the car's brand name by this method
   String getBrand() {
-    return brand;
+    return this.brand;
   }
 
+  ///returning the car's model by this method
   String getModel() {
     return model;
   }
 
+  ///returning the car's manufacturing year by this method
   int getYear() {
     return year;
   }
 
+  ///returning the car's age by this method
   int getAge() {
-    int currentYear = DateTime.now().year;
-    return currentYear - year;
+    return DateTime.now().year - year;
   }
 }
 
 void main() {
-  Car car1 = Car('Toyota', 'Camry', 2020, 10000);
-  Car car2 = Car('Honda', 'Civic', 2018, 8000);
-  Car car3 = Car('Ford', 'F-150', 2015, 15000);
+  /// Here "Car1" is the object of class Car()
+  var car1 =
+  new Car(brand: "Toyota", model: "Camry", year: 2020, milesDriven: 7000);
 
-  car1.drive(5000);
-  car2.drive(3000);
-  car3.drive(6000);
+  /// Here "Car2" is the object of class Car()
+  var car2 =
+  new Car(brand: "Honda", model: "Civic", year: 2018, milesDriven: 11000);
 
-  print('Car 1: ${car1.getBrand()} ${car1.getModel()} ${car1.getYear()} '
-      'Miles: ${car1.getMilesDriven()} Age: ${car1.getAge()}');
+  /// Here "Car3" is the object of class Car()
+  var car3 =
+  new Car(brand: "Ford", model: "F-150", year: 2015, milesDriven: 17000);
 
-  print('Car 2: ${car2.getBrand()} ${car2.getModel()} ${car2.getYear()} '
-      'Miles: ${car2.getMilesDriven()} Age: ${car2.getAge()}');
+  ///input the current driving distance for car1
+  car1.drive(200.00);
 
-  print('Car 3: ${car3.getBrand()} ${car3.getModel()} ${car3.getYear()} '
-      'Miles: ${car3.getMilesDriven()} Age: ${car3.getAge()}');
+  ///input the current driving distance for car2
+  car2.drive(350.00);
 
-  print('Total number of cars created: ${Car.numberOfCars}');
+  ///input the current driving distance for car3
+  car3.drive(225.00);
+
+  /// Printing the details of car1
+  print(
+      "Car1: ${car1.getBrand()} ${car1.model} ${car1.getYear()} Miles: ${car1.getMilesDriven().toStringAsFixed(0)} Age: ${car1.getAge()}\n");
+
+  /// Printing the details of car2
+  print(
+      "Car2: ${car2.getBrand()} ${car2.model} ${car2.getYear()} Miles: ${car2.getMilesDriven().toStringAsFixed(0)} Age: ${car2.getAge()}\n");
+
+  /// Printing the details of car3
+  print(
+      "Car3: ${car3.getBrand()} ${car3.model} ${car3.getYear()} Miles: ${car3.getMilesDriven().toStringAsFixed(0)} Age: ${car3.getAge()}\n");
+
+  ///Printing total number of created cars:
+  print("Total number of cars created: ${Car.numbersOfCars}");
 }
