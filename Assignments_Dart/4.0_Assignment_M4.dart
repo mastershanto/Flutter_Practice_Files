@@ -78,13 +78,13 @@ class CurrentAccount extends Account {
 }
 
 void main() {
-  ///Creating an instance of saving account
+  ///Creating an instance of savings account
   var savingsAccount = new SavingsAccount(
       accountNumber: 1051654645, initialBalance: 50000.00, interestRate: 13);
   savingsAccount.deposit(10000.00);
   savingsAccount.withdraw(70000.00);
 
-  ///Creating an instance of saving account
+  ///Creating an instance of Current Account
   var currentAccount = new CurrentAccount(
       accountNumber: 121515151,
       initialBalance: 50000.00,
