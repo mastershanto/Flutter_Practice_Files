@@ -1,18 +1,32 @@
-///Ajijul Hoque, module-4 liveTest, Flutter Batch-4, Ostad.app
+///Ajijul Hoque (Shanto), module-4 liveTest, Flutter Batch-4, Ostad.app
+
+///Base class: "Media"
+class Media {
+  void play() {
+    print("Playing media...");
+  }
+}
+
+/// Sub class: "Song"
+class Song extends Media {
+  /// Properties:
+  String? artist;
+
+  /// Constructor for initializing attribute's value
+  Song({this.artist});
+
+  @override
+  void play() {
+    print("Playing song by $artist...");
+  }
+}
 
 void main() {
-  ///Given a list of item prices
-  List<double> listOfItemPrices = [12.99, 8.75, 21.50, 5.00];
+  /// Here person is object of Media Class.
+  var media = new Media();
+  media.play();
 
-  /// total cost without tex
-  double costWithoutTex = 0;
-  for (double price in listOfItemPrices) {
-    costWithoutTex = costWithoutTex + price;
-  }
-
-  ///Total cost including tex rate of 8% on total price amount
-  double totalCostWithTex = costWithoutTex * (1 + 1 * 8 / 100);
-
-  ///Printing the total cost:
-  print("Total Cost: \$${totalCostWithTex.toStringAsFixed(2)}");
+  /// Here person is object of Song Class.
+  var song = new Song(artist: "Manna dey");
+  song.play();
 }

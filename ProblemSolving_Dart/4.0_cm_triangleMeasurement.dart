@@ -1,7 +1,6 @@
 import 'dart:io';
 void main(){
-  int? b;
-  int? h;
+
   String? input=stdin.readLineSync();
   List<String> s=input!.split(" ");
   int base=int.parse(s[0]);
